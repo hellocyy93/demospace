@@ -1,9 +1,9 @@
 package com.javase.test;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
 /**
  * @author chenyy
  * @version V1.0.0
@@ -15,7 +15,7 @@ import java.util.Date;
  */
 public class DateTest {
     public static void main(String[] args) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+       /* SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = null;
         try {
             date = sdf.parse("2019-04-30");
@@ -32,6 +32,18 @@ public class DateTest {
         Date time = cr.getTime();
         int days = cr.get(Calendar.DAY_OF_MONTH);
         System.out.println(time);
-        System.out.println(days);
+        System.out.println(days);*/
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        Calendar calendar = Calendar.getInstance();
+
+        calendar.set(2018,9,10);
+        //calendar.add(Calendar.MONTH,-1);
+
+        Date startDate = calendar.getTime();
+        String  startDateString= sdf.format(startDate);
+
+        System.out.println("格式化日期输出 "+startDateString);
+
     }
 }
