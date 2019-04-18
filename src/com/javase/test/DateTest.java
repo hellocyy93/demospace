@@ -4,7 +4,15 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+/**
+ * @author chenyy
+ * @version V1.0.0
+ * @company lhfinance.com
+ * @description: 测试修改日期
+ * @className: DateTest.java
+ * @package com.javase.test
+ * @date 2019/4/18 17:59
+ */
 public class DateTest {
     public static void main(String[] args) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
