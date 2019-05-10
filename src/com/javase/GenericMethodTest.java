@@ -1,4 +1,4 @@
-package com.javase.test;
+package com.javase;
 /**
  * @author chenyy
  * @version V1.0.0

@@ -1,4 +1,4 @@
-package com.javase.test;
+package com.javase;
 
 public class ExceptionDemo {
 

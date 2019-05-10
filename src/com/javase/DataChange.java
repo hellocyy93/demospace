@@ -1,4 +1,4 @@
-package com.javase.test;
+package com.javase;
 
 import java.math.BigDecimal;
 import java.text.ParseException;

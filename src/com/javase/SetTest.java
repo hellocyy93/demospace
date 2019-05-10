@@ -1,4 +1,4 @@
-package com.javase.test;
+package com.javase;
 
 import java.util.HashSet;
 import java.util.Iterator;
