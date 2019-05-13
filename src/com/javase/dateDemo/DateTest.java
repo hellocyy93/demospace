@@ -1,5 +1,6 @@
-package com.javase;
+package com.javase.dateDemo;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -14,7 +15,7 @@ import java.util.Date;
  * @date 2019/4/18 17:59
  */
 public class DateTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
        /* SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = null;
         try {
@@ -33,7 +34,7 @@ public class DateTest {
         int days = cr.get(Calendar.DAY_OF_MONTH);
         System.out.println(time);
         System.out.println(days);*/
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+     /*   SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         Calendar calendar = Calendar.getInstance();
 
@@ -43,7 +44,14 @@ public class DateTest {
         Date startDate = calendar.getTime();
         String  startDateString= sdf.format(startDate);
 
-        System.out.println("格式化日期输出 "+startDateString);
+        System.out.println("格式化日期输出 "+startDateString);*/
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sf.parse("2019-05-13");
+        System.out.println("Before Date: " +date);
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        c.add(Calendar.DAY_OF_MONTH,1);
+        System.out.println("After Date: " + c.getTime());
 
     }
 }

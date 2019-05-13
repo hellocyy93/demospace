@@ -1,4 +1,4 @@
-package com.javase;
+package com.javase.dateDemo;
 
 import java.math.BigDecimal;
 import java.text.ParseException;
