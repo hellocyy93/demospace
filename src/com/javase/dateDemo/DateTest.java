@@ -34,24 +34,36 @@ public class DateTest {
         int days = cr.get(Calendar.DAY_OF_MONTH);
         System.out.println(time);
         System.out.println(days);*/
-     /*   SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         Calendar calendar = Calendar.getInstance();
 
         calendar.set(2018,9,10);
-        //calendar.add(Calendar.MONTH,-1);
-
+        //calendar.add(Calendar.MONTH,-1)
         Date startDate = calendar.getTime();
         String  startDateString= sdf.format(startDate);
 
-        System.out.println("格式化日期输出 "+startDateString);*/
-        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println("格式化日期输出 "+startDateString);
+       /* SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = sf.parse("2019-05-13");
         System.out.println("Before Date: " +date);
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         c.add(Calendar.DAY_OF_MONTH,1);
-        System.out.println("After Date: " + c.getTime());
+        System.out.println("After Date: " + c.getTime());*/
+
+        //业务日期Calendar
+      /*  SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar bizDateCal = Calendar.getInstance();
+        bizDateCal.setTime(new Date());
+        System.out.println(sdf.format(bizDateCal.getTime()));
+        //账单日Calendar
+        Calendar statMntCal = Calendar.getInstance();
+        statMntCal.set(bizDateCal.get(Calendar.YEAR), bizDateCal.get(Calendar.MONTH)+2, 10);;
+        Date stateMentDate = statMntCal.getTime();
+
+        String format = sdf.format(stateMentDate);
+        System.out.println(format);*/
 
     }
 }
