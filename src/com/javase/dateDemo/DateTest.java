@@ -1,5 +1,7 @@
 package com.javase.dateDemo;
 
+import org.junit.Test;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -38,10 +40,14 @@ public class DateTest {
 
         Calendar calendar = Calendar.getInstance();
 
-        calendar.set(2018,9,10);
+        //calendar.set(2018,9,10);
         //calendar.add(Calendar.MONTH,-1)
-        Date startDate = calendar.getTime();
-        String  startDateString= sdf.format(startDate);
+        calendar.setTime(new Date());
+        //Date startDate = calendar.getTime();
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+        String  startDateString= sdf.format(cal.getTime());
 
         System.out.println("格式化日期输出 "+startDateString);
        /* SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
@@ -64,6 +70,24 @@ public class DateTest {
 
         String format = sdf.format(stateMentDate);
         System.out.println(format);*/
+
+    }
+    @Test
+    public void compareDate() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String str1 = "2019-07-31";
+        String str2 = "2019-07-31";
+        try {
+            Date date1 = sdf.parse(str1);
+            Date date2 = sdf.parse(str2);
+            if (date1.before(date2)) {
+                System.out.println("haha");
+            } else {
+                System.out.println("hehe");
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 
     }
 }

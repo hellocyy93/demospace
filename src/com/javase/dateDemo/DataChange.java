@@ -27,6 +27,12 @@ public class DataChange {
         String s = sdf.format(new Date());
         String s1 = "2019-05-01";
         Date dates = sdf.parse(s1);
+        doPrint(s1);
         System.out.println(dates);
+    }
+
+    private static void doPrint(String s1) {
+        int i = 2;
+        System.out.println("++++++++++++++++++++" + s1);
     }
 }
