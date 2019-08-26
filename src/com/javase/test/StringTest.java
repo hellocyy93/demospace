@@ -8,5 +8,13 @@ public class StringTest {
         System.out.println(sub1);
         String sub2 = sb.substring(1);
         System.out.println(sub2);
+
+        String replace = sb.replace("cy", "he");
+        System.out.println(replace);
+
+        String str = "123456789";
+        String str3 = str.substring(str.length() - 4, str.length());
+        System.out.println(str.length());
+        System.out.println(str3);
     }
 }
