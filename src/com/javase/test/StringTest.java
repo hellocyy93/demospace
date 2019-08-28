@@ -13,7 +13,7 @@ public class StringTest {
         System.out.println(replace);
 
         String str = "123456789";
-        String str3 = str.substring(str.length() - 4, str.length());
+        String str3 = str.substring(str.length() - 4);
         System.out.println(str.length());
         System.out.println(str3);
     }
