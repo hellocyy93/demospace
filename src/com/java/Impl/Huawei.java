@@ -12,7 +12,7 @@ public class Huawei implements Phone {
         Phone huawei = new Huawei();
         huawei.call();
     }
-    public void testcall1() {
+    public void testcall222() {
         System.out.println("testcall1");
     }
 }
