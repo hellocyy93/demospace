@@ -13,6 +13,6 @@ public class Huawei implements Phone {
         huawei.call();
     }
     public void testcall222() {
-        System.out.println("testcall1");
+        System.out.println("testcall222");
     }
 }
