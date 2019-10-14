@@ -15,4 +15,7 @@ public class Huawei implements Phone {
     public void callbbb() {
         System.out.println("callbbb");
     }
+    public void testcall333() {
+        System.out.println("testcall333");
+    }
 }
