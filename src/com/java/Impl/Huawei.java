@@ -10,7 +10,12 @@ public class Huawei implements Phone {
 
     public static void main(String[] args) {
         Phone huawei = new Huawei();
-        huawei.call();
+        if (null == huawei) {
+            System.out.println("aaa");
+        } else {
+            System.out.println("bbb");
+        }
+        //huawei.call();
     }
     public void testcall444() {
         System.out.println("testcall444");
