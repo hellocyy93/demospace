@@ -16,5 +16,12 @@ public class StringTest {
         String str3 = str.substring(str.length() - 4);
         System.out.println(str.length());
         System.out.println(str3);
+
+        String demo = "hello,world,nihao";
+        String[] arr = demo.split("\\,");
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            System.out.println();
+        }
     }
 }
