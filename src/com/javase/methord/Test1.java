@@ -11,11 +11,12 @@ public class Test1 {
        /* int y = doSum(i,str);
         System.out.println(y);
         System.out.println(str);*/
-        City city = new City();
+       /* City city = new City();
         city.setCode("001");
         city.setName("北京");
         getCity(city);
-        System.out.println(city);
+        System.out.println(city);*/
+        System.out.println(transProp("0"));
     }
 
     private void getCity(City city) {
@@ -27,5 +28,13 @@ public class Test1 {
     private int doSum(int i, String str) {
         str = "hello";
         return i+1;
+    }
+
+    private String transProp(String accountProp) {
+        if ("0".equals(accountProp)) {
+            return "C";
+        } else {
+            return "P";
+        }
     }
 }
