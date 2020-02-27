@@ -1,5 +1,6 @@
 package com.java.common;
 
+import com.java.beans.Animal;
 import org.junit.Test;
 
 public class CommonTest extends CommonPhone {
@@ -15,4 +16,9 @@ public class CommonTest extends CommonPhone {
         System.out.println("haha");
         return "haha";
     }
+    @Test
+    public void  test1() {
+        Animal animal = new Animal();
+    }
+
 }

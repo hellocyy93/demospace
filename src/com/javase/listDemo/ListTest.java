@@ -1,5 +1,7 @@
 package com.javase.listDemo;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,5 +20,11 @@ public class ListTest {
             }
         }
         System.out.println(temp);
+    }
+    @Test
+    public void listTest() {
+        List list = new ArrayList<>();
+        list.add(1);
+        System.out.println(list.get(0));
     }
 }
