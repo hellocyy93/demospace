@@ -11,7 +11,7 @@ public class Charu {
      * 　d、代码实现
      */
     public static void main(String[] args) {
-        int arr[] = {7, 5, 8};
+        int arr[] = {2, 3, 1};
 
         //插入排序
         for (int i = 1; i < arr.length; i++) {
@@ -24,11 +24,28 @@ public class Charu {
                     printArr(arr);
                     System.out.println();
                 } else {
+                    printArr(arr);
+                    System.out.println();
                    break;
                 }
             }
 
         }
+    /*   for (int i = 1; i < arr.length; i++) {
+           for (int j = i; j > 0; j--) {
+               if (arr[j] > arr[j - 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                   printArr(arr);
+                   System.out.println();
+               } else {
+                   printArr(arr);
+                   System.out.println();
+                   break;
+               }
+           }
+       }*/
     }
     private static void printArr(int[] arr) {
         for(int num : arr) {

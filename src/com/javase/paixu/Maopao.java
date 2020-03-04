@@ -8,8 +8,8 @@ public class Maopao {
      * d、代码实现
      */
     public static void main(String[] args) {
-        int[] arr = new int[]{8,7,6,5,4};
-        for (int i = 0; i < arr.length - 1; i++) {
+        int[] arr = new int[]{0,1,2};
+       /* for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
                if (arr[j] > arr[j +1]) {
                    int temp = arr[j + 1];
@@ -19,6 +19,19 @@ public class Maopao {
                 System.out.println("第"+ (i +1) +"遍" + ",第" + (j + 1) + "轮");
                 printArr(arr);
                 System.out.println();
+            }
+        }*/
+
+       //冒泡排序 从大到小
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] < arr[j + 1]) {
+                    int temp = arr[j + 1];
+                    arr[j + 1] = arr[j];
+                    arr[j] = temp;
+                    printArr(arr);
+                    System.out.println();
+                }
             }
         }
     }

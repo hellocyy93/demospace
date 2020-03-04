@@ -16,12 +16,25 @@ public class Xuanze {
      */
     public static void main(String[] args) {
         int arr[] = {6, 5, 3, 2, 4};
-        for (int i = 0; i < arr.length; i++) {
+    /*    for (int i = 0; i < arr.length; i++) {
             int index = i;
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j] < arr[index]) {
                     index = j;
                     System.out.println("第" + (i + 1) + "轮" + "第" + j + "次" + "index=" + index);
+                }
+            }
+            if (i != index) {
+                int temp = arr[index];
+                arr[index] = arr[i];
+                arr[i] = temp;
+            }
+        }*/
+        for (int i = 0; i < arr.length - 1; i++) {
+            int index = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] > arr[index]) {
+                    index = j;
                 }
             }
             if (i != index) {
