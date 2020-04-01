@@ -1,5 +1,7 @@
 package com.javase;
 
+import java.util.HashMap;
+
 public class SonDemo extends SuperDemo {
     SonDemo() {
         super(); // 调用父类构造方法（1）
@@ -17,8 +19,12 @@ public class SonDemo extends SuperDemo {
     }*/
 
     public static void main(String[] args) {
-        SonDemo cn = new SonDemo();
+        //SonDemo cn = (SonDemo) new SuperDemo();
 //        cn = new SonDemo("codersai");
         //cn = new Chinese("codersai", 18);
+        SuperDemo superDemo = new SuperDemo();
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        map.put("001", superDemo);
+        System.out.println(map.get("001"));
     }
 }

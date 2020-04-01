@@ -2,12 +2,13 @@ package com.javase.listDemo;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListTest {
     public static void main(String[] args) {
-        List<String> arrayList = new ArrayList<>();
+       /* List<String> arrayList = new ArrayList<>();
         arrayList.add("aa");
         arrayList.add("bb");
         arrayList.add("ccb");
@@ -19,7 +20,11 @@ public class ListTest {
                 System.out.println(str);
             }
         }
-        System.out.println(temp);
+        System.out.println(temp);*/
+        BigDecimal num1 = new BigDecimal("100.50000");
+        BigDecimal num2 = new BigDecimal("10000.000");
+        System.out.println(num1.add(num2).setScale
+                (2, BigDecimal.ROUND_HALF_UP));
     }
     @Test
     public void listTest() {
