@@ -1,9 +1,14 @@
 package com.javase.father;
 
 public class Father {
-    String house = "$100";
+    private String house = "$100";
 
-    protected void say() {
+    public String fatherName;
+
+    public void say() {
         System.out.println(house);
+    }
+    public void hello() {
+        System.out.println(fatherName);
     }
 }

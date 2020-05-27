@@ -1,11 +1,14 @@
 package com.javase.test;
 
 import com.java.beans.City;
+import com.java.interfaces.Phone;
 import org.junit.Test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class NullTest {
     public static City city;
@@ -31,6 +34,13 @@ public class NullTest {
         } else {
             System.out.println(city.getCode());
         }
+    }
+    @Test
+    public void testdemo3() throws ParseException {
+        List<Phone> list1 = new ArrayList<>();
+        List<Phone> list2 = null;
+        System.out.println(list1);
+        System.out.println(list2);
     }
 
 
