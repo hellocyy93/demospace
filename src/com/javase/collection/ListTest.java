@@ -1,5 +1,6 @@
 package com.javase.collection;
 
+import com.java.beans.City;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -8,10 +9,13 @@ import java.util.List;
 public class ListTest {
     @Test
     public void test1() {
-        ArrayList<Object> list = new ArrayList<>();
-        doAddList(list);
-        for (Object object : list) {
-            System.out.println(object);
+        ArrayList<City> list = new ArrayList<>();
+        //doAddList(list);
+        for (City city : list) {
+            if (null == city.getDesc()) {
+                System.out.println("空");
+            }
+
         }
     }
 

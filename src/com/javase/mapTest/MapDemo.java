@@ -9,13 +9,15 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class MapDemo {
     public static void main(String[] args) {
-        HashMap<String, String> map = new HashMap<>();
-        map.put("1","one");
+        //HashMap<String, String> map = new HashMap<>();
+      /*  map.put("1","one");
         map.put("2","two");
-        map.put("3","three");
-        for (Map.Entry<String, String> entry : map.entrySet()) {
+        map.put("3","three");*/
+       /* for (Map.Entry<String, String> entry : map.entrySet()) {
             System.out.println(entry.getKey() + "===" + entry.getValue());
-        }
+        }*/
+       // System.out.println(map.get("4"));
+        System.out.println(System.currentTimeMillis());
     }
     @Test
     public void doubleMap() {
