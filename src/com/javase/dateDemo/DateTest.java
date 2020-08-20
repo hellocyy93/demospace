@@ -75,16 +75,18 @@ public class DateTest {
     @Test
     public void compareDate() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        String str1 = "2019-07-31";
-        String str2 = "2019-07-31";
+        String str1 = "2020-08-20";
+        String str2 = "2020-09-20";
         try {
             Date date1 = sdf.parse(str1);
             Date date2 = sdf.parse(str2);
-            if (date1.before(date2)) {
-                System.out.println("haha");
-            } else {
-                System.out.println("hehe");
-            }
+//            if (date1.before(date2)) {
+//                System.out.println("haha");
+//            } else {
+//                System.out.println("hehe");
+//            }
+            System.out.println(date1.getTime());
+            System.out.println(date2.getTime());
         } catch (ParseException e) {
             e.printStackTrace();
         }
